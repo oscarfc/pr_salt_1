@@ -10,6 +10,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.NotFoundException;
+import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.container.ResourceContext;
 import javax.ws.rs.core.Context;
@@ -19,6 +20,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author oscar.favero
  */
+@Path("/photo")
 @RolesAllowed("users")
 public class PhotoResource {
 
